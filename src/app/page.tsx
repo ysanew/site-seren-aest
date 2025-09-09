@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { CalendarDaysIcon, SparklesIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import { Button } from '@/components/ui/Button';
 import { Header } from '@/components/ui/Header';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -78,10 +79,12 @@ export default function Home() {
                     transition={{ duration: 0.4 }}
                     className="w-full h-full"
                   >
-                    <img
+                    <Image
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover transition-transform"
+                      fill
+                      className="object-cover transition-transform"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </motion.div>
@@ -347,31 +350,31 @@ const services = [
   {
     title: 'Facial Treatments',
     description: 'Experience our signature facial treatments designed to rejuvenate and revitalize your skin. Using premium products and advanced techniques for optimal results.',
-    image: '/assets/services/facial.jpg',
+    image: '/assets/services/pic10.jpg',
   },
   {
     title: 'Anti-Aging Solutions',
     description: 'Turn back time with our specialized anti-aging treatments. Targeting fine lines and wrinkles while promoting collagen production for youthful skin.',
-    image: '/assets/services/anti-aging.jpg',
+    image: '/assets/services/pic11.jpg',
   },
   {
     title: 'Skin Consultations',
     description: 'Get personalized skin analysis and custom treatment plans from our expert cosmetologists. Understanding your skin type for the best care possible.',
-    image: '/assets/services/consultation.jpg',
+    image: '/assets/services/pic12.jpg',
   },
   {
     title: 'Chemical Peels',
     description: 'Reveal fresh, glowing skin with our professional chemical peels. Perfect for treating acne, sun damage, and uneven skin tone.',
-    image: '/assets/services/peel.jpg',
+    image: '/assets/services/pic13.jpg',
   },
   {
     title: 'Microdermabrasion',
     description: 'Advanced exfoliation treatment to improve skin texture and tone. Ideal for addressing scarring, enlarged pores, and dull complexion.',
-    image: '/assets/services/microdermabrasion.jpg',
+    image: '/assets/services/pic14.jpg',
   },
   {
     title: 'LED Light Therapy',
     description: 'State-of-the-art LED treatment to promote skin healing and rejuvenation. Different light wavelengths target various skin concerns.',
-    image: '/assets/services/led-therapy.jpg',
+    image: '/assets/services/pic15.jpg',
   },
 ];
