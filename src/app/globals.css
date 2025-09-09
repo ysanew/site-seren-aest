@@ -1,26 +1,133 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdfcfa;
+  --foreground: #2d2926;
+
+  /* Elegant gold and warm color palette */
+  --color-primary-50: #fefdf9;
+  --color-primary-100: #fdf9f0;
+  --color-primary-200: #faf2de;
+  --color-primary-300: #f4e6c1;
+  --color-primary-400: #ecd49b;
+  --color-primary-500: #d4af37;
+  --color-primary-600: #b8941f;
+  --color-primary-700: #9c7a16;
+  --color-primary-800: #7d6214;
+  --color-primary-900: #644f15;
+
+  /* Secondary warm grays */
+  --color-secondary-50: #fafaf9;
+  --color-secondary-100: #f5f5f4;
+  --color-secondary-200: #e7e5e4;
+  --color-secondary-300: #d6d3d1;
+  --color-secondary-400: #a8a29e;
+  --color-secondary-500: #78716c;
+  --color-secondary-600: #57534e;
+  --color-secondary-700: #44403c;
+  --color-secondary-800: #292524;
+  --color-secondary-900: #1c1917;
+
+  /* Accent colors */
+  --color-accent-gold: #d4af37;
+  --color-accent-gold-light: #f4e6c1;
+  --color-accent-gold-dark: #b8941f;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom gradients and effects */
+.gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+}
+
+.gradient-warm {
+  background: linear-gradient(135deg, #fefdf9 0%, #faf2de 100%);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Button specific styles for consistency */
+.btn-gold {
+  background-color: #b8941f !important;
+  color: white !important;
+  border-color: #b8941f !important;
+}
+
+.btn-gold:hover {
+  background-color: #9c7a16 !important;
+  border-color: #9c7a16 !important;
+}
+
+.btn-gold:active {
+  background-color: #7d6214 !important;
+  border-color: #7d6214 !important;
+}
+
+/* Force button text to be visible */
+button {
+  color: inherit !important;
+}
+
+button[style*="background-color: #b8941f"] {
+  color: white !important;
+}
+
+button[style*="background-color: #b8941f"] * {
+  color: white !important;
+}
+
+button[style*="background-color: #ffffff"] {
+  color: #644f15 !important;
+}
+
+button[style*="background-color: #ffffff"] * {
+  color: #644f15 !important;
+}
+
+/* Additional overrides for button text */
+.btn-primary-text {
+  color: white !important;
+}
+
+.btn-inverse-text {
+  color: #644f15 !important;
+}
+
+.shadow-warm {
+  box-shadow: 0 4px 6px -1px rgba(212, 175, 55, 0.1), 0 2px 4px -1px rgba(212, 175, 55, 0.06);
+}
+
+.shadow-warm-lg {
+  box-shadow: 0 10px 15px -3px rgba(212, 175, 55, 0.1), 0 4px 6px -2px rgba(212, 175, 55, 0.05);
+}
+
+.shadow-warm-xl {
+  box-shadow: 0 20px 25px -5px rgba(212, 175, 55, 0.1), 0 10px 10px -5px rgba(212, 175, 55, 0.04);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1c1917;
+    --foreground: #fafaf9;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
