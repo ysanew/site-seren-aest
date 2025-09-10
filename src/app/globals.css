@@ -119,15 +119,14 @@ button[style*="background-color: #ffffff"] * {
   box-shadow: 0 20px 25px -5px rgba(212, 175, 55, 0.1), 0 10px 10px -5px rgba(212, 175, 55, 0.04);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1c1917;
-    --foreground: #fafaf9;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  color-scheme: light only;
+}
+
+/* Force light theme always */
+* {
+  color-scheme: light only !important;
 }

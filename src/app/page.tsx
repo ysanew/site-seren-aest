@@ -51,11 +51,7 @@ export default function Home() {
       {/* Services Section */}
       <section id="services" className="py-20 bg-gradient-to-b from-secondary-50 to-white">
         <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="text-center mb-16"
-          >
+          <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-secondary-900 mb-4">
               Our <span className="text-gradient-gold">Premium</span> Services
             </h2>
@@ -63,22 +59,15 @@ export default function Home() {
             <p className="text-lg text-secondary-600 max-w-2xl mx-auto">
               Discover our range of luxurious treatments designed to enhance your natural beauty
             </p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={service.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
                 className="group bg-white rounded-2xl overflow-hidden shadow-warm hover:shadow-warm-xl transition-all duration-500 hover:-translate-y-2"
               >
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    transition={{ duration: 0.4 }}
-                    className="w-full h-full"
-                  >
+                  <div className="w-full h-full">
                     <Image
                       src={service.image}
                       alt={service.title}
@@ -87,7 +76,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </motion.div>
+                  </div>
                 </div>
                 <div className="p-6 bg-gradient-to-br from-white to-primary-50/30">
                   <h3 className="font-serif text-xl text-secondary-900 mb-3 group-hover:text-primary-600 transition-colors">
@@ -95,7 +84,7 @@ export default function Home() {
                   </h3>
                   <p className="text-secondary-700 leading-relaxed">{service.description}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
           
