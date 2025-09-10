@@ -15,14 +15,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-primary-100/30 to-primary-300/30"></div>
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="text-center">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="font-serif text-4xl md:text-6xl lg:text-7xl text-secondary-900 mb-6"
             >
               <span className="text-gradient-gold">Transform</span> Your Beauty
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -87,7 +87,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          
+
           {/* CTA Button after Services */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -124,7 +124,7 @@ export default function Home() {
                 With over a decade of experience in professional cosmetology, we are dedicated to helping you achieve your beauty goals through personalized treatments and cutting-edge techniques.
               </p>
             </motion.div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -137,7 +137,7 @@ export default function Home() {
                 </div>
                 <h3 className="font-serif text-xl text-secondary-900 mb-3 group-hover:text-primary-600 transition-colors">Expert Care</h3>
                 <p className="text-secondary-700 leading-relaxed">
-                  Our certified cosmetologists bring years of experience and continuous education to every treatment.
+                  Our certified Medical Aesthetician bring years of experience and continuous education to every treatment.
                 </p>
               </motion.div>
 
@@ -207,14 +207,14 @@ export default function Home() {
                         <span className="text-white text-sm">📞</span>
                       </div>
                       <p className="text-secondary-700">
-                        <span className="font-medium">Phone:</span> 
-                        <a 
-                          href="https://wa.me/15551234567" 
-                          target="_blank" 
+                        <span className="font-medium">Phone:</span>
+                        <a
+                          href="https://wa.me/14372341523"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary-600 hover:text-primary-700 transition-colors duration-200 ml-1 underline"
                         >
-                          (555) 123-4567
+                          (437) 234-1523
                         </a>
                       </p>
                     </div>
@@ -223,7 +223,7 @@ export default function Home() {
                         <span className="text-white text-sm">✉️</span>
                       </div>
                       <p className="text-secondary-700">
-                        <span className="font-medium">Email:</span> info@serenityaesthetics.com
+                        <span className="font-medium">Email:</span> info@serenityaesthetics.pro
                       </p>
                     </div>
                     <div className="flex items-center space-x-3">
@@ -231,14 +231,14 @@ export default function Home() {
                         <span className="text-white text-sm">📍</span>
                       </div>
                       <p className="text-secondary-700">
-                        <span className="font-medium">Address:</span> 
-                        <a 
-                          href="https://maps.google.com/?q=123+Beauty+Lane,+Wellness+City,+WC+12345" 
-                          target="_blank" 
+                        <span className="font-medium">Address:</span>
+                        <a
+                          href="https://maps.google.com/?q=Vaughan,+ON"
+                          target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary-600 hover:text-primary-700 transition-colors duration-200 ml-1 underline"
                         >
-                          123 Beauty Lane, Wellness City, WC 12345
+                          Vaughan, ON
                         </a>
                       </p>
                     </div>
@@ -305,7 +305,7 @@ export default function Home() {
                       id="phone"
                       name="phone"
                       className="w-full px-4 py-3 border border-primary-200 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 hover:border-primary-300"
-                      placeholder="(555) 123-4567"
+                      placeholder="14372341523"
                     />
                   </div>
 
@@ -347,8 +347,8 @@ const services = [
     image: '/assets/services/pic11.jpg',
   },
   {
-    title: 'Skin Consultations',
-    description: 'Get personalized skin analysis and custom treatment plans from our expert cosmetologists. Understanding your skin type for the best care possible.',
+    title: 'Face Massage',
+    description: 'A refined lymphatic facial massage that decongests, restores glow, and leaves the skin visibly refreshed and sculpted',
     image: '/assets/services/pic12.jpg',
   },
   {
@@ -357,8 +357,8 @@ const services = [
     image: '/assets/services/pic13.jpg',
   },
   {
-    title: 'Microdermabrasion',
-    description: 'Advanced exfoliation treatment to improve skin texture and tone. Ideal for addressing scarring, enlarged pores, and dull complexion.',
+    title: 'SMAS Lifting (HIFU)',
+    description: 'An advanced HIFU treatment working beneath the surface, redefining facial contours, smoothing fine lines, and unveiling youthful firmness.',
     image: '/assets/services/pic14.jpg',
   },
   {
@@ -366,4 +366,36 @@ const services = [
     description: 'State-of-the-art LED treatment to promote skin healing and rejuvenation. Different light wavelengths target various skin concerns.',
     image: '/assets/services/pic15.jpg',
   },
+  {
+    title: 'Body Sculpt & Wraps',
+    description: 'A state-of-the-art silhouette ritual: cutting-edge massage, vacuum contouring, RF lifting, and cavitation merge to refine curves and reduce centimeters.',
+    image: '/assets/services/pic15.jpg',
+  },
+  {
+    title: 'Waxing',
+    description: 'Impeccably smooth skin in record time — from silky legs to the fastest flawless bikini in just 15 minutes.',
+    image: '/assets/services/pic15.jpg',
+  },
+  {
+    title: 'Exosome Therapy',
+    description: 'A breakthrough in biotechnology — often called the “youth elixir.” Exosomes rejuvenate from within, revitalizing skin texture and defying visible aging.',
+    image: '/assets/services/pic15.jpg',
+  },
+  {
+    title: 'Glow & Warm Therapy',
+    description: 'A cocooning facial wrap with therapeutic warmth — hydrating, soothing, and easing seasonal discomfort. The ultimate indulgence for colder days.',
+    image: '/assets/services/pic15.jpg',
+  },
+  {
+    title: 'RF-Lifting',
+    description: 'Radiowave energy awakens collagen renewal, lifting and firming the skin. Experience a sculpted, youthful complexion without downtime.',
+    image: '/assets/services/pic15.jpg',
+  },
+  {
+    title: 'Microcurrent Therapy',
+    description: 'Subtle currents activate cellular vitality and muscle tone, smoothing fine lines while imparting a refreshed, radiant allure.',
+    image: '/assets/services/pic15.jpg',
+  },
+
+
 ];
