@@ -35,7 +35,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              <a href="#contact">
+              <a href="https://dikidi.ru/982072?p=0.pi">
                 <Button className="text-xl px-12 py-4">
                   Book Appointment
                 </Button>
@@ -98,7 +98,7 @@ export default function Home() {
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
               Ready to experience our premium services? Book your appointment today and begin your beauty transformation.
             </p>
-            <a href="#contact">
+            <a href="https://dikidi.ru/982072?p=0.pi">
               <Button className="text-lg px-10 py-4">
                 Book Appointment
               </Button>
@@ -339,63 +339,61 @@ const services = [
   {
     title: 'Facial Treatments',
     description: 'Experience our signature facial treatments designed to rejuvenate and revitalize your skin. Using premium products and advanced techniques for optimal results.',
-    image: '/assets/services/pic10.jpg',
+    image: '/assets/services/1_facial_treatment.jpg',
   },
   {
     title: 'Anti-Aging Solutions',
     description: 'Turn back time with our specialized anti-aging treatments. Targeting fine lines and wrinkles while promoting collagen production for youthful skin.',
-    image: '/assets/services/pic11.jpg',
+    image: '/assets/services/2_anti_aging.jpg',
   },
   {
     title: 'Face Massage',
     description: 'A refined lymphatic facial massage that decongests, restores glow, and leaves the skin visibly refreshed and sculpted',
-    image: '/assets/services/pic12.jpg',
+    image: '/assets/services/3_face_massage.jpg',
   },
   {
     title: 'Chemical Peels',
     description: 'Reveal fresh, glowing skin with our professional chemical peels. Perfect for treating acne, sun damage, and uneven skin tone.',
-    image: '/assets/services/pic13.jpg',
+    image: '/assets/services/4_chemical_peels.jpg',
   },
   {
     title: 'SMAS Lifting (HIFU)',
     description: 'An advanced HIFU treatment working beneath the surface, redefining facial contours, smoothing fine lines, and unveiling youthful firmness.',
-    image: '/assets/services/pic14.jpg',
+    image: '/assets/services/5_smass.jpg',
   },
   {
     title: 'LED Light Therapy',
     description: 'State-of-the-art LED treatment to promote skin healing and rejuvenation. Different light wavelengths target various skin concerns.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/6_led.jpg',
   },
   {
     title: 'Body Sculpt & Wraps',
     description: 'A state-of-the-art silhouette ritual: cutting-edge massage, vacuum contouring, RF lifting, and cavitation merge to refine curves and reduce centimeters.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/7_body_scalp.jpg',
   },
   {
     title: 'Waxing',
     description: 'Impeccably smooth skin in record time — from silky legs to the fastest flawless bikini in just 15 minutes.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/8_waxing.jpg',
   },
   {
     title: 'Exosome Therapy',
     description: 'A breakthrough in biotechnology — often called the “youth elixir.” Exosomes rejuvenate from within, revitalizing skin texture and defying visible aging.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/9_exome.jpg',
   },
   {
     title: 'Glow & Warm Therapy',
     description: 'A cocooning facial wrap with therapeutic warmth — hydrating, soothing, and easing seasonal discomfort. The ultimate indulgence for colder days.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/10_warm_therapy.jpg',
   },
   {
     title: 'RF-Lifting',
     description: 'Radiowave energy awakens collagen renewal, lifting and firming the skin. Experience a sculpted, youthful complexion without downtime.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/12_rf.jpg',
   },
   {
     title: 'Microcurrent Therapy',
     description: 'Subtle currents activate cellular vitality and muscle tone, smoothing fine lines while imparting a refreshed, radiant allure.',
-    image: '/assets/services/pic15.jpg',
+    image: '/assets/services/11_micro.jpg',
   },
-
-
 ];
